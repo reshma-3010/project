@@ -1,0 +1,73 @@
+body{
+    margin: 10%;
+    background-color:#68685F;
+    
+}
+button{
+    height:7vh;
+    width:14vw;
+}
+button:hover{
+    background-color:rgb(50, 15, 205);
+    color:white;
+}
+.parent1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.parent2{
+    height:20vw;
+    width:20vw;
+    border-radius: 50%;
+    background-color: rgb(26, 95, 72);
+    margin: 5% 0% 5% 35%;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animate{
+    0% {background-color: #DFFF00;}
+    25% {background-color: #FFBF00;}
+    50% {background-color:#40E0D0;}
+    75% {background-color:#DE3163;}
+    100% {background-color: #FF7F50;}
+}
+.parent2:hover{
+    border-radius: 0%;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    button{
+        height:8vh;
+        width:17vw;
+    }
+    button:hover{
+        background-color:rgb(15, 142, 205);
+        color:white;
+    } 
+    .parent2{
+        height:50vw;
+        width:50vw;
+        border-radius: 50%;
+        background-color: rgb(26, 95, 72);
+        margin: 5% 0% 5% 20%;
+        animation-name: animate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    
+    }
+    @keyframes animate{
+        0% {background-color: #DFFF00;}
+        25% {background-color: #FFBF00;}
+        50% {background-color:#40E0D0;}
+        75% {background-color:#DE3163;}
+        100% {background-color: #FF7F50;}
+    }
+    .parent2:hover{
+        border-radius: 0%;
+    }
+}
